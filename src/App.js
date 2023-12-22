@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 const axios = require('axios');
 //Declaring class component
@@ -8,9 +8,9 @@ class App extends Component {
     // Initialize state or perform other setup tasks
      // initial state values : empty array of people
     this.state = {
-      people:[],
+      people: [],
     };
-
+this.getPeople = this.getPeople.bind(this);
     // Bind event handler methods
     // this.handleClick = this.handleClick.bind(this);
   }
@@ -19,6 +19,7 @@ class App extends Component {
     return axios.get("https://swapi.dev/api/people")
     .then((response) => {
       console.log(response.data.results);
+      this.setState( { people: response.data.results } )
     })
   }
   // Event handler method
