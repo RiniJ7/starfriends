@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class CharInfo extends Component {
     constructor(props){
         super(props);
-
+//this is the state of the component
         this.state = {
             expanded: false,
         }
@@ -20,6 +20,7 @@ class CharInfo extends Component {
     }
 
     render() {
+        //this is the component related to props
         const info = this.props.charInfo;
         if(!this.state.expanded){
             return <p className="btn btn-info" onClick={this.open}>Show Info</p>
