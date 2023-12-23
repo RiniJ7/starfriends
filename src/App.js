@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
-import './App.css';
-const axios = require('axios');
+import axios from 'axios';
+import List from './List';
+
+
+// const res = await axios.get("https://swapi.dev/api/people/");
+// console.log(res);
+// var mani;
+// mani="cat";
+// console.log ("typeof mani"+typeof mani);
+
+
+// class ManiT {
+// name="";
+//   dob="";
+//   constructor() {
+//     this.name="sdfsdf";
+//     this.age=1123;
+//   }
+// }
+// const newMani = new ManiT();
+// console.log("typeof Mani T "+newMani.constructor.name);
 //Declaring class component
+
 class App extends Component {
-  constructor(props) {
+  constructor(props){
     super(props);
-    // Initialize state or perform other setup tasks
-     // initial state values : empty array of people
+
     this.state = {
       people: [],
     };
@@ -16,24 +35,23 @@ this.getPeople = this.getPeople.bind(this);
   }
 
   getPeople(){
-    return axios.get("https://swapi.dev/api/people")
+    return axios.get("https://swapi.dev/api/people/")
     .then((response) => {
       console.log(response.data.results);
       this.setState( { people: response.data.results } )
     })
   }
-  // Event handler method
-  handleClick() {
-    // Do something when the button is clicked
+
+  componentDidMount(){
+    this.getPeople()
   }
 
-  render() {
 
+  render() {
+const {people} = this.state;
   return (
     <div className="App">
-      <div>
-        <button onClick={this.handleClick}>Click me</button>
-      </div>
+      <List people={people} />
     </div>
   );
 }
