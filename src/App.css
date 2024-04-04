@@ -11,9 +11,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
+  margin: 40px auto;
   background-color: bisque;
-  margin-top: 100px;
+  padding: 20px;
+  margin-top: 20px; /* Add space on the top */
+  margin-bottom: 20px; /* Add space on the bottom */
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-top: 50px; /* Reduce top margin on smaller screens */
+    margin-bottom: 50px; /* Add bottom margin to create space */
+    padding: 10px; /* Reduce padding for smaller screens */
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    margin-top: 50px; /* Further reduce top margin on even smaller screens */
+    margin-bottom: 20px; /* Further add bottom margin */
+    display: flex;
+  }
 }
 
 .card {
@@ -24,7 +43,7 @@
   margin: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -50,11 +69,48 @@
   border-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* index.css */
+
+.user-details {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #d8a546; /* Red border */
+  border-radius: 5px; /* Rounded corners */
+  max-width: calc(100vw - 40px); /* Maximum width of viewport - some padding */
+  max-height: calc(
+    100vh - 40px
+  ); /* Maximum height of viewport - some padding */
+  overflow:scroll ; /* Add scrollbar if content exceeds max-height */
+}
+
+.user-details ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.user-details li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.btn {
+  cursor: pointer; /* Change cursor to pointer */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn-info {
+  background-color: #a1602b; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+}
+
+.btn-danger {
+  background-color: #eda751; /* Red background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+}
+
+.btn-danger:hover {
+  background-color: #6b4019; /* Darker red on hover */
 }
