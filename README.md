@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Star Friends : Displaying the Star Wars characters. The information is extracted from Star Wars API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Star Friends! This web application allows you to explore information about your favorite Star Wars characters.
+Star Friends provides a user-friendly interface to browse through a list of Star Wars characters and view their details. You can quickly access key information such as gender, birth date, and hair color for each character.
 
-## Available Scripts
+## Demo
+[Starwars characters demo](https://starfriends.vercel.app/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Character List**: Displays a list of Star Wars characters fetched from the Star Wars API (SWAPI).
+- **Character Details**: Click on 'show info' button of a character to expand and view additional details, such as gender, birth year, and hair color.
+- **Show/Hide Functionality**: Toggle to show or hide detailed information for each character, providing a clutter-free viewing experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Star Friends is built using the following technologies:
 
-### `npm test`
+- **React.js**: A popular JavaScript library for building user interfaces.
+- **Axios**: A promise-based HTTP client for making requests to the Star Wars API.
+- **Bootstrap**: A front-end framework for designing responsive and mobile-first websites.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Star Wars API
 
-### `npm run build`
+Star Friends utilizes the Star Wars API (SWAPI) to fetch information about Star Wars characters. The SWAPI provides a comprehensive database of characters, films, planets, starships, and more from the Star Wars universe. You can learn more about the SWAPI and explore its documentation [here](https://swapi.dev/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run Star Friends locally on your machine, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository**: Use ```git clone https://github.com/RiniJ7/starfriends``` to clone the repository to your local machine.
+2. **Install Dependencies**: Navigate to the project directory and run ```npm install``` to install all required dependencies.
+3. **Start the Development Server**: Run ```npm start``` to start the development server.
+4. **View the Application**: Open your web browser and navigate to ```http://localhost:3000``` to access Star Friends.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the application is running, you can:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Browse through the list of Star Wars characters.
+- Click on a character to view additional details.
+- Toggle to show or hide detailed information for each character.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screen Shot 2024-04-03 at 7 41 37 PM](https://github.com/RiniJ7/starfriends/assets/125235432/989a4d57-eb23-4951-b81c-6602f24b4b13)
 
-## Learn More
+![Screen Shot 2024-04-03 at 7 42 10 PM](https://github.com/RiniJ7/starfriends/assets/125235432/3082a93f-ce36-4a6e-bbb5-e26c058e1cf5)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Inspired by [React-Starwars API](https://www.youtube.com/watch?v=vwWPM7za3Pk&list=PLhScwEnhQ-bmroyHFduwgOZ1KrdDvk_44&index=1)
