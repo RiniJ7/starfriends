@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import List from './List';
-
+import './App.css';
 
 // const res = await axios.get("https://swapi.dev/api/people/");
 // console.log(res);
