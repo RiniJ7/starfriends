@@ -33,6 +33,8 @@ To run Star Friends locally on your machine, follow these steps:
 3. **Start the Development Server**: Run ```npm start``` to start the development server.
 4. **View the Application**: Open your web browser and navigate to ```http://localhost:3000``` to access Star Friends.
 
+
+
 ## Usage
 
 Once the application is running, you can:
