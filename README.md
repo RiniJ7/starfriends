@@ -45,6 +45,8 @@ Once the application is running, you can:
 
 ## Screenshots
 
+
+
 ![Screen Shot 2024-04-03 at 7 41 37 PM](https://github.com/RiniJ7/starfriends/assets/125235432/989a4d57-eb23-4951-b81c-6602f24b4b13)
 
 ![Screen Shot 2024-04-03 at 7 42 10 PM](https://github.com/RiniJ7/starfriends/assets/125235432/3082a93f-ce36-4a6e-bbb5-e26c058e1cf5)
